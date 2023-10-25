@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="pilhas.css">
+</head>
+<body>
+    <div id="conteudo">
+        <h1>Pilhas Sequenciais</h1>
+
+        <!-- Campos de entrada -->
+        <div class="input-container">
+            <label for="input">Inserir elemento:</label>
+            <input type="text" id="input">
+            <button onclick="pushElement()">Empilhar</button>
+            <button onclick="popElement()">Desempilhar</button>
+            <label for="stack">Tamanho da Pilha:</label>
+            <input type="number" id="stack-size">
+            <button onclick="setStackSize()">Definir Tamanho</button>
+            <a href="javascript:history.back()" class="botao-voltar">Voltar</a>
+            <label for="peek-element">Consultar Topo da Pilha:</label>
+            <input type="text" id="peek-element" readonly>
+            <button onclick="peek()">Consultar</button>
+        </div>
+
+        <!-- Pilha será gerada aqui -->
+        <div id="stack">
+        <!-- Pilha será gerada verticalmente aqui -->
+        </div>
+
+        <a href="javascript:history.back()" class="botao-voltar">Voltar</a>
+        <script src="./pilhas.js"></script>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

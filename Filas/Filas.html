@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<html>
+    
+<head>
+    <link rel="stylesheet" type="text/css" href="filas.css">
+</head>
+<body>
+    <div id="conteudo">
+        <h1>Filas Sequenciais</h1>
+        
+        <!-- Campos de entrada -->
+        <div class="input-container">
+            <label for="input">Inserir elemento:</label>
+            <input type="text" id="input">
+            <button onclick="enqueue()">Enfileirar</button>
+            <button onclick="dequeue()">Desenfileirar</button>
+            <label for="queue-size">Tamanho da Fila:</label>
+            <input type="number" id="queue-size">
+            <button onclick="setQueueSize()">Definir Tamanho</button>
+            <label for="front-element">Consultar Primeiro Elemento:</label>
+            <input type="text" id="front-element" readonly>
+            <button onclick="consultarPrimeiroElemento()">Consultar</button>        
+            <a href="javascript:history.back()" class="botao-voltar">Voltar</a>
+        </div>
+        
+        <!-- Fila será gerada aqui -->
+        <div id="queue" class="queue-container">
+            <div id="queue" class="queue-container">
+                <div class="queue-box queue-start">Inicio</div>
+                <!-- Blocos em branco serão gerados aqui -->
+                <div class="queue-box queue-end">Fim</div>
+        </div>
+        
+      
+        <script src="./filas.js"></script>
+    </div>
+</body>
+</html>
